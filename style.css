@@ -1,0 +1,114 @@
+body{
+    margin: 0; 
+    padding:0;
+    background: white;
+    font-family: 'Raleway', sans-serif;
+    color:white;
+}
+
+/* background image */
+.banner{
+    height: 100vh;
+    width: 100%;
+    background:url(/images/cartographer.png),url(/images/man\ looking\ up\ at\ yosemite.jpg);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    /* filter:blur(); */
+}
+/*navbar  from top of page*/
+.banner .navbar{
+    margin-top: 2%;
+}
+/* main left page logo */
+.navbar-brand{
+    margin-left: 1%;
+    z-index:2;  
+}
+/* right nav position logo */
+.nav{
+    margin-right: 10%;
+}
+/* right button css */
+.nav-link{
+    color:white;
+    font-size: 1.5em;
+    font-weight:bolder;
+  
+}
+.nav-link:hover{
+    color:rgb(146, 143, 143);
+}
+
+.nav-link:active{
+    color:white;
+}
+
+.nav-item{
+
+}
+
+/* large middle logo postioning */
+.info{
+    margin-top:5%;
+    transform:translateY(10%);
+}
+
+/*large midldle logo CSS */
+.info h1{
+    color:white;
+    font-size: 4em;
+    font-weight: 1000;
+    letter-spacing: 15px; 
+}
+/*  text under large midldle logo CSS */
+.info p{
+    color:white;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.btn{
+    background-color: rgb(90, 122, 34);
+    color: white;
+    filter:opacity(80%);
+}
+/* search bar css */
+.search{
+    padding: bottom 5px;
+    margin-bottom: 10px;
+    filter:opacity(55%);
+}
+.media{
+    color:black;
+    
+}
+.image-1{
+    height: 50%; 
+    width: 40%;
+    margin-left: 5%;
+
+}
+.media-body{
+    float:right;
+    padding-right: 3%;
+    color:white; 
+    
+}
+.media{
+    background:url(./images/shley-tree-1.png);
+}
+.btn1{
+float:inherit
+}
+
+
+
+    
+
+
+
+
+/* ADD MEDIA  QUERY RESPONSIVE */
+ 
