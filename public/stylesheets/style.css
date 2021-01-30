@@ -1,3 +1,4 @@
+
 body{
     margin: 0; 
     padding:0;
@@ -10,7 +11,7 @@ body{
 .banner{
     height: 100vh;
     width: 100%;
-    background:url(/images/cartographer.png),url(/images/man\ looking\ up\ at\ yosemite.jpg);
+    background:url(../images/cartographer.png),url(../images/man\ looking\ up\ at\ yosemite.jpg);
     background-position:top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,9 +46,7 @@ body{
     color:white;
 }
 
-.nav-item{
 
-}
 
 /* large middle logo postioning */
 .info{
@@ -81,7 +80,7 @@ body{
     filter:opacity(55%);
 }
 .media{
-    color:black;
+    color:white;
     
 }
 .image-1{
@@ -97,10 +96,19 @@ body{
     
 }
 .media{
-    background:url(./images/shley-tree-1.png);
+    background:url(/public/images/shley-tree-1.png);
+    background-position:top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }
 .btn1{
 float:inherit
+}
+form.signup,
+form.login {
+  margin-top: 50px;
 }
 
 
