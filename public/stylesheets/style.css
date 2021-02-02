@@ -47,7 +47,6 @@ body{
 }
 
 
-
 /* large middle logo postioning */
 .info{
     margin-top:5%;
@@ -113,10 +112,45 @@ form.login {
 
 
 
-    
+.container-left{
+    min-width: 50vw;
+    min-height: 100vh;
+    display:flex;
+}
+.container-right{
+    min-width: 50vw;
+    min-height: 100vh;
+    display:flex;
+}
 
+.right{
+    flex:1;
+    width: 50%;
+}
+.left{
+   flex:1;
+    width: 50%;
+    background-image:url(../images/shley-tree-1.png);
 
+}
 
+.signup{
+    position: absolute;
+    padding: 4rem 10rem 4rem;
+    bottom: 30%;
+    width: 30%;
+    height: 35%;
+    font-size: 20px;
+    color:aqua;
+}
 
-/* ADD MEDIA  QUERY RESPONSIVE */
- 
+h2{
+    color: rgb(0, 238, 255);
+    width: 10%;
+    text-align: center;
+    text-emphasis: bolder;
+    position: absolute;
+    left: 4.5%;
+    top: 20%;
+    font-size: 10rem;
+}
