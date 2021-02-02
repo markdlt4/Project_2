@@ -2,7 +2,7 @@
 // places, thingstodo, etc.
 // https://www.nps.gov/subjects/developer/api-documentation.htm#/
 
-const { response } = require("express");
+//const { response } = require("express");
 
 const apiKey = '\&api_key=oZZ6A3EEQPoNgJfv3fM7VlQt9Jcky7VyMODxwiof'
 const searchItem = 'parks'
@@ -27,11 +27,6 @@ $("#run-search").on("click", function(event) {
       }).then(function(response) {
         console.log(response);
         console.log(response.data[0].fullName);
-        const parkName = () => {
-            return response.data[0].fullName
-        }
+        location.href = '/parks/' + response.data[0].fullName
       });
-      location.href = '/parks/' + response.data[0].fullName
 });
-
-exports.parkName = parkName;
