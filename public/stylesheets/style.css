@@ -29,7 +29,7 @@ body{
 }
 /* right nav position logo */
 .nav{
-    margin-right: 10%;
+    margin-right: 5%;
 }
 /* right button css */
 .nav-link{
@@ -59,14 +59,14 @@ body{
     color:white;
     font-size: 4em;
     font-weight: 1000;
-    letter-spacing: 15px; 
+    letter-spacing: 20px; 
 }
 /*  text under large midldle logo CSS */
 .info p{
     color:white;
     font-size: 1.3em;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing:5px;
 }
 .btn{
     background-color: rgb(90, 122, 34);
@@ -102,15 +102,15 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    display: ;
 }
 .btn1{
 float:inherit
 }
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 40px;
 }
-
 
 
     
@@ -119,4 +119,5 @@ form.login {
 
 
 /* ADD MEDIA  QUERY RESPONSIVE */
+/* p */
  
