@@ -1,7 +1,7 @@
 
 
 body {
-    background-image: url(./images/cartographer.png),url(./Grand_canyou.jpg);
+    background-image: url(../images/cartographer.png),url(../images/Grand_canyou.jpg);
     background-color: azure;
     background-size: cover;
     background-repeat: no-repeat;
