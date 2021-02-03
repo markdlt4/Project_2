@@ -56,7 +56,7 @@ module.exports = function(app) {
     //   res.json({});
     // } else {
       db.Activity.create(req.body).then(function(dbActivity) {
-        res.json(dbActivity);
+        res.json(dbActivity); 
       });
     // }
   });

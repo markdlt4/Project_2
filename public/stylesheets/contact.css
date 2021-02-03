@@ -28,17 +28,17 @@ body {
 }
 
 .contact .content h2 {
-    font-size: 1.5em;
+    font-size: 4em;
     font-weight: 1000;
     color: #fff;
     letter-spacing: 20px;
 }
 
 .contact .content p {
-    font-weight: 2000;
-    font-size: 4.5em;
+    font-weight: 1000;
+    font-size: 3.5em;
     color: #fff;
-    letter-spacing: 40px;
+    letter-spacing: 20px;
 
 } 
 
@@ -47,25 +47,25 @@ body {
     display: flex;
     justify-items: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 30px;
     flex-direction: column;
-
 }
 
 .container .contactInfo {
     width: 50%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 
 .container .contactInfo .box {
     position: relative;
+    padding: 20px 0;
     display: flex;
 }
 
 .container .contactInfo .box .icon {
-    min-width: 40px;
-    height: 40px;
+    min-width: 60px;
+    height: 60px;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -80,12 +80,11 @@ body {
     font-size: 16px;
     color: #fff;
     flex-direction: column;
-    font-weight: 1000;
+    font-weight: 300;
 }
 
 .container .contactInfo .box .text h3 {
-    font-weight: 2000;
-    font-size: 1.2em;
+    font-weight: 500;
     color: #00bcd4;
 }
 
@@ -96,10 +95,9 @@ body {
 }
 
 .contactForm h2 {
-    font-size: 20px;
+    font-size: 30px;
     color: #333;
-    font-weight: 1000;
-    text-align: center;
+    font-weight: 500;
 }
 
 .contactForm .inputBox {
