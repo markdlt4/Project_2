@@ -1,27 +1,21 @@
 //Window.location.href
 const apiKey = '\&api_key=oZZ6A3EEQPoNgJfv3fM7VlQt9Jcky7VyMODxwiof'
 const searchItem = 'parks'
-const searchTerm = window.location.href.replace('', '');
 
 $(document).ready(function(){
-    var search = location.search
+    var sortURL = window.location.pathname.replace('/parks/', '');
+    search = sortURL.replace(/%20/g, ' ');
     console.log(search);
-    console.log(searchTerm);
-    search = 
-    'https://developer.nps.gov/api/v1/' 
-    + searchItem 
-    + '?q=' 
-    + searchTerm
-    + apiKey;
-    // $.ajax({
-    //     url: search,
-    //     method: 'GET'
-    //     }).then(function(response) {
-    //     document.getElementById('bodyText').innerHTML = response.data[0];
-    //     document.getElementById('park-name').innerHTML = response.data[0].fullName;
-    //     });
-    // });
-});
+    $.ajax({
+        url: search,
+        method: 'GET'
+        }).then(function(response) {
+            for(i = 0; i <= response.data.length; i++) {
+                document.getElementById('bodyText').innerHTML = response.data[i].description;
+                document.getElementById('park-name').innerHTML = response.data[i].fullName;
+            }
+        })
+    });
 
 // bodyText
 // park-name

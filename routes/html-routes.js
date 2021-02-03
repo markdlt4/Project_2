@@ -29,7 +29,4 @@ module.exports = function(app) {
   app.get("/parks", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/parks.html"));
   });
-  app.get("/parks/:parkName", isAuthenticated, (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/parks.html"));
-  });
 };
