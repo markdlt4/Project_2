@@ -28,17 +28,18 @@ body {
 }
 
 .contact .content h2 {
-    font-size: 4em;
+    font-size: 1.5em;
     font-weight: 1000;
     color: #fff;
-    letter-spacing: 20px;
+    letter-spacing: 30px;
+    text-align: center;
 }
 
 .contact .content p {
-    font-weight: 1000;
-    font-size: 3.5em;
-    color: #fff;
-    letter-spacing: 20px;
+    font-weight: 2000;
+    font-size: 4.8em;
+    color: azure;
+    letter-spacing: 60px;
 
 } 
 
@@ -53,25 +54,24 @@ body {
 
 .container .contactInfo {
     width: 50%;
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .container .contactInfo .box {
     position: relative;
-    padding: 20px 0;
     display: flex;
 }
 
 .container .contactInfo .box .icon {
-    min-width: 60px;
-    height: 60px;
+    min-width: 40px;
+    height: 40px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    font-size: 22px;
+    border-radius: 60%;
+    font-size: 20px;
 }
 
 .container .contactInfo .box .text {
@@ -80,11 +80,11 @@ body {
     font-size: 16px;
     color: #fff;
     flex-direction: column;
-    font-weight: 300;
+    font-weight: 1000;
 }
 
 .container .contactInfo .box .text h3 {
-    font-weight: 500;
+    font-weight: 2000;
     color: #00bcd4;
 }
 
@@ -95,15 +95,16 @@ body {
 }
 
 .contactForm h2 {
-    font-size: 30px;
+    font-size: 28px;
     color: #333;
-    font-weight: 500;
+    font-weight: 2000;
+    text-align: center;
 }
 
 .contactForm .inputBox {
     position: relative;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 2px;
 }
 
 .contactForm .inputBox input, .contactForm .inputBox textarea {
@@ -141,11 +142,12 @@ body {
 {
     width: 100px;
     background: #00bcd4;
-    color: #fff;
+    color:azure;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    font-weight: 1000;
 }
 
 @media (max-width: 991px)
