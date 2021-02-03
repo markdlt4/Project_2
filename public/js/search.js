@@ -22,6 +22,6 @@ $("#run-search").on("click", function(event) {
         url: search,
         method: "GET"
       }).then(function(response) {
-        location.href = '/parks/' + response.data[0].fullName
-      });
+        location.href = '/parks?searchTerm=' + response.data[0].fullName
+    });
 });
