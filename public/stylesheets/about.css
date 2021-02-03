@@ -4,7 +4,9 @@ body {
     background-color: cadetblue;
     margin-left: 20px;
     margin-right:20px;
+    font-family: Raleway;
     background-image:url(/public/images/cartographer.png);
+    
   }
   
   html {
