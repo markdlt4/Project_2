@@ -4,9 +4,7 @@ body {
     background-color: cadetblue;
     margin-left: 20px;
     margin-right:20px;
-    font-family: Raleway;
     background-image:url(/public/images/cartographer.png);
-    
   }
   
   html {
@@ -43,8 +41,8 @@ body {
     padding: 50px;
     text-align: center;
     background-color:rgb(12, 43, 43);
-    color: white;
-    background-image:url(/public/images/cartographer.png);
+    color: white
+    ;
   }
   
   .container {
