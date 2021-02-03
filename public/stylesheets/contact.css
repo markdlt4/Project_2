@@ -6,6 +6,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+<<<<<<< HEAD
+   }
+
+  
+=======
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -168,3 +173,4 @@ body {
         width: 100%;
     }
 }
+>>>>>>> f20e835f06b0c51ed4fffc47c3db4db64e3355fe
