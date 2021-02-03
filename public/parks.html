@@ -10,71 +10,84 @@
     <title>EVRGRN</title>
 </head>
 <body>
+  <nav class="navbar navbar-md bg-dark">
+    <div class="navbar-brand">
+      <a href="landingpage.html" class="pull-left brand-front"><img src="./images/icons8-path-50 (1).png"></a>
+    </div> 
+     <!--top buttons -->
+    <ul class="nav">
+      <li class="nav-item"> 
+        <a class="nav-link" href="./landingpage.html">Home</a>
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link" href="/parks.html">Parks</a>
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link" href="./index.html">About</a>
+      </li>
+      <li class="nav-item"> 
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
     <div class="container-fluid banner-about">
         <div class="row">
           <div class="col-md-12">
-            <!-- Navbar logo -->
-            <nav class="navbar navbar-md">
-              <div class="navbar-brand">EVRGRN</div> 
-               <!--top buttons -->
-              <ul class="nav">
-                <li class="nav-item"> 
-                  <a class="nav-link" href="./landingpage.html">Home</a>
-                </li>
-                <li class="nav-item"> 
-                    <a class="nav-link" href="./parks.html">Parks</a>
-                  </li>
-                <li class="nav-item"> 
-                  <a class="nav-link" href="./index.html">About</a>
-                </li>
-                <li class="nav-item"> 
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item"> 
-                  <a class="nav-link" href="#">Login</a>
-                </li>
-              </ul>
-            </nav>
           </div>
-        </div>
-      </div>
-
-      
         <div class="media bg-dark">
-          <img class=" align-self-start mr-3 mt-5 image-1" src="/images/man looking up at yosemite.jpg" alt="Generic placeholder image">
-          <div id='bodyText' class="media-body col-md-6 mt-5 ">
-            <h5 id='park-name' class="mt-1 text-1">PARK NAME</h5>
+          <img class=" align-self-start mr-3 mt-5 image-1" id="parkImage" src="./images/Grand_canyou.jpg" alt="Generic placeholder image">
+          <div id="bodyText" class="media-body col-md-6 mt-5 ">
+            <h5 class="mt-1 text-1" class="park-name">PARK NAME</h5>
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
           </div>
-          <button type="button" class="btn1">VISIT</button>
-          <button type="button" class="btn1">ADD</button>
-        </div>
-      </div>
-     
- 
+          
+            <div>
+              <h4>Activity</h4>
+              <div id="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Select
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" class="activityDropdown">
+                  <a class="dropdown-item" href="#">biking</a>
+                  <a class="dropdown-item" href="#">bird watching</a>
+                  <a class="dropdown-item" href="#">cliff diving</a>                
+                </div>
+               </div>
+              </div>
 
+              <div>
+              <ul>
+                <li>
+                  <h3 id="parks"></h3>''
+                </li>
+                <li>
+                  <h3 id="places"></h3>
+                </li>
+                <li>
+                  <h3 id="campgrounds"></h3>
+                </li>
+                <li>
+                  <h3 id="events"></h3>
+                </li>
+                <li>
+                  <h3 id="parksVisterCenter"></h3>
+                </li>
+                <li>
+                  <h3 id="parksVisterCenter"></h3>
+                </li>
+                <li>
+                  <h3 id="parksVisterCenter"></h3>
+                </li>
+                <li>
+                  <h3 id="parksVisterCenter"></h3>
+                </li>
+              
+            </div>
+    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="./js/searchResults.js" type="text/javascript"></script>
