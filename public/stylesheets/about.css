@@ -1,6 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    background-color: cadetblue;
+    margin-left: 20px;
+    margin-right:20px;
+    background-image:url(/public/images/cartographer.png);
   }
   
   html {
@@ -13,9 +17,19 @@ body {
   
   .column {
     float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+    width: 33%;
+    margin-bottom: 20px;
+    padding: 8px;
+  }
+  h2{
+    color:white;
+    font-size:50px;
+    letter-spacing: 4px;
+  }
+  h1{
+    color:white;
+    font-size:50px;
+    letter-spacing: 4px;
   }
   
   .card {
@@ -26,12 +40,15 @@ body {
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
-    color: white;
+    background-color:rgb(12, 43, 43);
+    color: white
+    ;
   }
   
   .container {
-    padding: 0 16px;
+    padding:16px;
+    background-color:rgb(12, 43, 43);
+    background-image:url(/public/images/cartographer.png);
   }
   
   .container::after, .row::after {
@@ -41,16 +58,19 @@ body {
   }
   
   .title {
-    color: grey;
+    color:white;
+  }
+  p{
+    color:white;
   }
   
   .button {
     border: none;
-    outline: 0;
+    outline: 2px;
     display: inline-block;
-    padding: 8px;
+    padding: 10px;
     color: white;
-    background-color: #000;
+    background-color: cadetblue;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -65,4 +85,5 @@ body {
       width: 100%;
       display: block;
     }
+    
   }
