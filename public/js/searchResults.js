@@ -40,13 +40,15 @@ $(document).ready(function(){
             var node2 = document.createElement('p');
             var parkInfoNode = document.createTextNode(response.data[i].description);
             //var node3 = document.createElement('img');
-            //node3.id = 'parkPicture' + [i];
-            //document.getElementById('parkPicture' + [i]).src = response.data[i].images[0].url
+            //node3.id = 'parkImage' + [i];
+            //document.getElementById('parkImage' + [i]).src = response.data[i].images[0].url
             node1.appendChild(parkNameNode);
             megaNode.appendChild(node1);
+            node1.setAttribute('id', response.data[i].name);
+            console.log(node1.id);
             node2.appendChild(parkInfoNode);
             megaNode.appendChild(node2);
-            //node3.appendChild(image);
+            //node3.appendChild(parkImage);
             //megaNode.appendChild(node3);
             document.getElementById('park-info').appendChild(megaNode);
         //<div id='image' class="media bg-dark">
