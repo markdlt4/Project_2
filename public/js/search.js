@@ -11,8 +11,6 @@ const siteURL = "https://frozen-island-95140.herokuapp.com"
 
 $("#run-search").on("click", function(event) {
     event.preventDefault();
-    //Clear any previous data here
-    //document.getElementById("anydatatoclear").innerHTML = "";
     userInput = document.getElementById("search-input").value;
     search = 
     'https://developer.nps.gov/api/v1/' 
@@ -20,13 +18,10 @@ $("#run-search").on("click", function(event) {
     + '?q=' 
     + userInput 
     + apiKey;
-    console.log(search);
     $.ajax({
         url: search,
         method: "GET"
       }).then(function(response) {
-        console.log(response);
-        console.log(response.data[0].fullName);
         location.href = '/parks/' + response.data[0].fullName
       });
 });
