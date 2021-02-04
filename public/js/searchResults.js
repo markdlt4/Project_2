@@ -21,7 +21,7 @@ $(document).ready(function(){
         url: search,
         method: 'GET'
     }).then(function(response) {
-        for(i = 0; i < response.data.length && i <=10; i++) {
+        for(i = 0; i < response.data.length; i++) {
             var megaNode = document.createElement('LI');
             var node = document.createElement('a');
             var parkNode = document.createTextNode(response.data[i].name);
@@ -30,42 +30,42 @@ $(document).ready(function(){
             megaNode.appendChild(node);
             document.getElementById('parks').appendChild(megaNode);
         }
-        for(i = 0; i < response.data.length && i <=10; i++) {
-            //<h5 class="mt-1 text-1" id="park-name"></h5>
-            //<p id="bodyText"></p>
-            //'park-info'
+        var button = document.createElement('button');
+        button.innerHTML = "Save This Park";
+        document.getElementById('park-info').appendChild(button);
+        for(i = 0; i < response.data.length; i++) {
+            //Create LI element
             var megaNode = document.createElement('LI');
+            //Create parkName header
             var node1 = document.createElement('h5');
             var parkNameNode = document.createTextNode(response.data[i].fullName);
+            //Create Park Description
             var node2 = document.createElement('p');
             var parkInfoNode = document.createTextNode(response.data[i].description);
-            //var node3 = document.createElement('img');
-            //node3.id = 'parkImage' + [i];
-            //document.getElementById('parkImage' + [i]).src = response.data[i].images[0].url
+            //Create Save Button
+            //var button = document.createElement('button');
+            //button.innerHTML = "Save " + response.data[i].name
+            //apply all to HTML doc
             node1.appendChild(parkNameNode);
             megaNode.appendChild(node1);
             node1.setAttribute('id', response.data[i].name);
-            console.log(node1.id);
             node2.appendChild(parkInfoNode);
             megaNode.appendChild(node2);
-            //node3.appendChild(parkImage);
-            //megaNode.appendChild(node3);
+            //megaNode.appendChild(button);
             document.getElementById('park-info').appendChild(megaNode);
-        //<div id='image' class="media bg-dark">
-        //<img class=" align-self-start mr-3 mt-5 image-1" id="parkImage" src="./images/Grand_canyou.jpg" alt="Generic placeholder image"></img>
 
         }
-        // $("#park-name").text(response.data[0].fullName);
-        // $("#bodyText").text(response.data[0].description);
         $("#parkImage").attr("src", response.data[0].images[0].url);
-        
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            savePark(search, 'test', 1);
+        });
+    function savePark(parkName, parkActivity, UserId) {
+        $.post("/api/activity", {
+          parkName: parkName,
+          parkActivity: parkActivity,
+          UserId: UserId
+        })
+      }
     });
 });
-
-// bodyText
-// park-name
-// parks
-// places
-// campgrounds
-// events
-// parksVisitorCenter
