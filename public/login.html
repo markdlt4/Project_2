@@ -1,41 +1,57 @@
-
-  
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>EVRGRN LOGIN</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <title>EVRGRN LOGIN</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <link href="./stylesheets/calvinstyle.css" rel="stylesheet" />
+  </head>
 
-  <link href="stylesheets/calvinstyle.css" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container-left">
-    <div class="left">
-      <h2 class="center">EVRGRN</h2>
-      <form class="signup">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email Address</label>
-          <input type="email" class="form-control" id="email-input" placeholder="Email">
+  <body>
+    <div class="container-left">
+      <div class="row">
+        <div class="left">
+          <h2 class="center">EVRGRN LOGIN</h2>
+          <form class="login">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email-input"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password-input"
+                placeholder="Password"
+              />
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+          </form>
+          <br />
+          <p>sign up <a href="/">Become a Member</a></p>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="password-input" placeholder="Password">
-        </div>
-        <button type="submit" class="btn btn-default">Login</button>
-        <a class="l-page" href="./signup.html">Signup Page</a>
-    </div>
-    </form>
-
-    <div class="container-right">
-      <image class="right" alt="hiking" src="./images/boots-4417595_1280 (1).jpg">
+      </div>
+      <div class="container-right">
+        <image class="right" alt="hiking" src="./images/south-tyrol-4145438_1280.jpg">
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
-
+  </body>
 </html>
