@@ -58,7 +58,8 @@ $(document).ready(function(){
         $("#parkImage").attr("src", response.data[0].images[0].url);
         button.addEventListener('click', event => {
             event.preventDefault();
-            savePark(search, 'test', 1);
+            
+            savePark(search, 'test', 2);
         });
     function savePark(parkName, parkActivity, UserId) {
         $.post("/api/activity", {
