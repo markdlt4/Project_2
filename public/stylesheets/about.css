@@ -6,6 +6,28 @@ body {
     margin-right:20px;
     background-image:url(/public/images/cartographer.png);
   }
+  .navbar-brand{
+    margin-left: 1%;
+    z-index:2;  
+}
+/* right nav position logo */
+.nav{
+    margin-right: 5%;
+}
+/* right button css */
+.nav-link{
+    color:white;
+    font-size: 1.5em;
+    font-weight:bolder;
+  
+}
+.nav-link:hover{
+    color:rgb(146, 143, 143);
+}
+
+.nav-link:active{
+    color:white;
+}
   
   html {
     box-sizing: border-box;
@@ -16,7 +38,6 @@ body {
   }
   
   .column {
-    float: left;
     width: 33%;
     margin-bottom: 20px;
     padding: 8px;

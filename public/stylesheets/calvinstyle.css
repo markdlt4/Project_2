@@ -177,3 +177,17 @@ h2{
     color: rgb(255, 255, 255);
 }
 
+@media (min-width: 411px) and (max-width: 1500px) {
+    .container-right {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+    }
+    .sign {
+        font-weight: 600;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        font-size:50px;
+        left: 2%
+    }
+}
+
